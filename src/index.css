@@ -32,27 +32,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@keyframes names-scan {
-  0%,
-  10% {
-    opacity: 0;
-    -webkit-mask-position: 50% -95%;
-    mask-position: 50% -95%;
-  }
-
-  22%,
-  82% {
-    opacity: 0.95;
-  }
-
-  92%,
-  100% {
-    opacity: 0;
-    -webkit-mask-position: 50% 195%;
-    mask-position: 50% 195%;
-  }
-}
-
 html,
 body,
 #root {
@@ -104,11 +83,17 @@ select {
 
 .profile-photo-wrap {
   position: relative;
+  overflow: visible;
+  background: transparent;
+}
+
+.profile-photo-inner {
+  position: relative;
   overflow: hidden;
   background: #d9d2ce;
 }
 
-.profile-photo-wrap::after {
+.profile-photo-inner::after {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -180,14 +165,7 @@ select {
   background-size: 586px 827px;
 }
 
-.names-stack {
-  position: relative;
-  display: grid;
-  justify-items: center;
-}
-
 .couple-names {
-  grid-area: 1 / 1;
   display: grid;
   justify-items: center;
   margin: 0;
@@ -204,46 +182,11 @@ select {
   display: block;
 }
 
-.couple-names-shine {
-  color: #fbf8f6;
-  opacity: 0;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.34);
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0 43%,
-    #000 48%,
-    #000 52%,
-    transparent 58% 100%
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0 43%,
-    #000 48%,
-    #000 52%,
-    transparent 58% 100%
-  );
-  -webkit-mask-position: 50% -95%;
-  mask-position: 50% -95%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 260% 260%;
-  mask-size: 260% 260%;
-  pointer-events: none;
-  animation: names-scan 3s ease-in-out infinite;
-}
-
 .couple-ampersand {
   margin-block: 0.12em 0.08em;
   font-family: "Bickham Script Pro", "Edwardian Script ITC", cursive;
   font-size: 0.68em;
   line-height: 0.74;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .couple-names-shine {
-    animation: none;
-    opacity: 0;
-  }
 }
 
 @media (min-width: 720px) {
