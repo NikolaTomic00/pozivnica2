@@ -18,7 +18,7 @@ function ProfilePictureSection() {
           <h1 className="couple-names">
             <span>Nina</span>
             <span className="couple-ampersand">i</span>
-            <span>Milan</span>
+            <span>Nemanja</span>
           </h1>
         </div>
       </div>

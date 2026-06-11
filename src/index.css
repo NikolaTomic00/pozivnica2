@@ -108,7 +108,7 @@ select {
   z-index: 3;
   display: grid;
   justify-items: center;
-  margin-top: clamp(-104px, -20vw, -76px);
+  margin-top: clamp(-96px, -18vw, -70px);
   padding: 0 12px clamp(28px, 6vw, 42px);
 }
 
