@@ -11,15 +11,13 @@ function ProfilePictureSection() {
               src={assetPath("profilepic.png")}
               alt="Nina and Nemanja"
             />
-            <img
-              className="profile-name-overlay"
-              src={assetPath("ringwithname.png")}
-              alt=""
-              aria-hidden="true"
-            />
             <div className="profile-overlay-copy">
+              <span
+                className="profile-ring-icon"
+                style={{ backgroundImage: `url(${assetPath("ring.png")})` }}
+                aria-hidden="true"
+              />
               <p>Nina i Nemanja</p>
-              <span>26.09.2026.</span>
             </div>
           </div>
         </div>

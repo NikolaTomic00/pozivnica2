@@ -120,44 +120,37 @@ select {
   transform: translateX(-9px);
 }
 
-.profile-name-overlay {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  max-width: none;
-  pointer-events: none;
-}
-
 .profile-overlay-copy {
   position: absolute;
-  bottom: clamp(16px, 4.4vw, 28px);
-  left: clamp(18px, 5vw, 34px);
+  bottom: clamp(14px, 4vw, 24px);
+  left: 50%;
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--invitation-border);
   text-align: center;
   pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.profile-ring-icon {
+  width: clamp(66px, 16vw, 86px);
+  height: clamp(78px, 19vw, 98px);
+  margin-bottom: clamp(2px, 0.8vw, 5px);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: clamp(500px, 123vw, 620px) auto;
 }
 
 .profile-overlay-copy p {
   margin: 0;
   font-family: var(--script);
-  font-size: clamp(34px, 9vw, 56px);
+  font-size: clamp(44px, 11vw, 70px);
   font-weight: 400;
   line-height: 0.86;
   letter-spacing: 0;
   white-space: nowrap;
-}
-
-.profile-overlay-copy span {
-  display: block;
-  margin-top: clamp(3px, 1vw, 7px);
-  font-family: "Times New Roman", Times, serif;
-  font-size: clamp(14px, 3.4vw, 18px);
-  font-weight: 700;
-  letter-spacing: 0.08em;
 }
 
 .details-section {
