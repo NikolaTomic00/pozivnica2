@@ -11,8 +11,6 @@ function InvitationDetailsSection() {
 
           <p className="details-date">26. SEPTEMBAR 2026.</p>
 
-          <p className="details-signature">Nina i Nemanja</p>
-
           <div className="details-times">
             <p>13.00 h - crkveno venčanje</p>
             <p>16.30 h - svečana proslava</p>
@@ -23,7 +21,7 @@ function InvitationDetailsSection() {
 
           <p className="details-closing">Radosno vas očekujemo,</p>
 
-          <p className="details-families">Porodice Jović i Marić</p>
+          <p className="details-families">Nina i Nemanja</p>
 
           <span className="details-divider" aria-hidden="true" />
 
