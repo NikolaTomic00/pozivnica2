@@ -20,6 +20,7 @@
   --invitation-bg: #e8e2e0;
   --invitation-border: #7b6e6a;
   --invitation-text: #5f5552;
+  --invitation-gold: #b68d48;
   --serif: "Cormorant Garamond", Georgia, serif;
   --script:
     "Edwardian Script ITC", "Bickham Script Pro", "Great Vibes", cursive;
@@ -30,6 +31,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes countdown-scan {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(200%);
+  }
 }
 
 html,
@@ -307,7 +318,7 @@ select {
 
 .timeline-event h2 {
   margin: 0;
-  font-size: clamp(28px, 7.2vw, 36px);
+  font-size: 24px;
   font-weight: 800;
   letter-spacing: 0;
   line-height: 1.08;
@@ -315,14 +326,14 @@ select {
 
 .timeline-address {
   margin: clamp(10px, 2.4vw, 14px) 0 0;
-  font-size: clamp(21px, 5.4vw, 26px);
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.28;
 }
 
 .timeline-time {
   margin: clamp(10px, 2.5vw, 14px) 0 0;
-  font-size: clamp(29px, 7vw, 36px);
+  font-size: 24px;
   font-weight: 800;
   line-height: 1;
 }
@@ -354,6 +365,115 @@ select {
   color: var(--invitation-bg);
 }
 
+.countdown-section {
+  display: grid;
+  place-items: start center;
+  padding: clamp(10px, 3svh, 26px) clamp(16px, 4vw, 28px)
+    clamp(42px, 8svh, 76px);
+}
+
+.countdown-inner {
+  width: min(100%, 430px);
+  color: var(--invitation-border);
+  text-align: center;
+}
+
+.countdown-date-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 352px;
+  margin: 0 auto;
+}
+
+.countdown-date-row span {
+  height: 1px;
+  flex: 1;
+  background: var(--invitation-border);
+}
+
+.countdown-date-row p {
+  margin: 0;
+  white-space: nowrap;
+  color: var(--invitation-border);
+  font-family: "Playwrite GB J", cursive;
+  font-size: clamp(22px, 6vw, 30px);
+  font-style: italic;
+  line-height: 1;
+}
+
+.countdown-title {
+  margin: 28px 0 0;
+  white-space: nowrap;
+  color: var(--invitation-border);
+  font-family: "Edwardian Script ITC", cursive;
+  font-size: clamp(45px, 17vw, 60px);
+  line-height: 1;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  max-width: 416px;
+  margin: 32px auto 0;
+}
+
+.countdown-box {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.countdown-value {
+  position: relative;
+  display: flex;
+  width: 100%;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgba(123, 110, 106, 0.55);
+  border-radius: 8px;
+  background: #f3eeec;
+  box-shadow: 0 12px 24px rgba(80, 72, 58, 0.08);
+}
+
+.countdown-value > span:last-child {
+  color: var(--invitation-gold);
+  font-family: "Geist", Arial, sans-serif;
+  font-size: clamp(24px, 7vw, 38px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.countdown-scan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 50%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--invitation-border),
+    transparent
+  );
+  animation: countdown-scan 2.4s linear infinite;
+}
+
+.countdown-label {
+  color: var(--invitation-gold);
+  font-family: "Geist", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 @media (min-width: 720px) {
   .profile-section {
     padding-top: clamp(34px, 6svh, 64px);
@@ -374,5 +494,17 @@ select {
 
   .timeline-inner {
     width: min(100%, 470px);
+  }
+
+  .countdown-inner {
+    width: min(100%, 470px);
+  }
+
+  .countdown-grid {
+    gap: 16px;
+  }
+
+  .countdown-label {
+    font-size: 12px;
   }
 }

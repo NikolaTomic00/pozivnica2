@@ -9,13 +9,14 @@ function InvitationDetailsSection() {
             Sačuvajte dan za nas i budite deo naših najlepših uspomena.
           </p>
 
-          <p className="details-date">2. JUN 2026.</p>
+          <p className="details-date">26. SEPTEMBAR 2026.</p>
 
           <p className="details-signature">Nina i Nemanja</p>
 
           <div className="details-times">
             <p>13.00 h - crkveno venčanje</p>
-            <p>16.30 h - građansko venčanje</p>
+            <p>16.30 h - svečana proslava</p>
+            <p>17.30 h - građansko venčanje</p>
           </div>
 
           <p className="details-location">Svečana sala „Kristal”, Pećinci</p>
@@ -27,7 +28,7 @@ function InvitationDetailsSection() {
           <span className="details-divider" aria-hidden="true" />
 
           <p className="details-rsvp">
-            Molimo vas da svoje prisustvo potvrdite do 15. aprila.
+            Molimo vas da svoje prisustvo potvrdite do 15. septembra.
           </p>
         </div>
       </div>
