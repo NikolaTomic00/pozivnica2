@@ -1,24 +1,25 @@
 import EmblaCarousel from "../components/EmblaCarousel";
+import { assetPath } from "../lib/assetPath";
 
 const slides = [
   {
-    src: "/picture1 (1).jpg",
+    src: assetPath("picture1 (1).jpg"),
     alt: "Nina and Nemanja photo 1",
   },
   {
-    src: "/picture2.jpg",
+    src: assetPath("picture2.jpg"),
     alt: "Nina and Nemanja photo 2",
   },
   {
-    src: "/picture3.jpg",
+    src: assetPath("picture3.jpg"),
     alt: "Nina and Nemanja photo 3",
   },
   {
-    src: "/picture4.jpg",
+    src: assetPath("picture4.jpg"),
     alt: "Nina and Nemanja photo 4",
   },
   {
-    src: "/picture5.jpg",
+    src: assetPath("picture5.jpg"),
     alt: "Nina and Nemanja photo 5",
   },
 ];

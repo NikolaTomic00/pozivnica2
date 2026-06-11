@@ -1,3 +1,5 @@
+import { assetPath } from "../lib/assetPath";
+
 function ProfilePictureSection() {
   return (
     <section className="profile-section" aria-label="Couple profile picture">
@@ -6,7 +8,7 @@ function ProfilePictureSection() {
           <div className="profile-photo-inner">
             <img
               className="profile-photo"
-              src="/profilepic.png"
+              src={assetPath("profilepic.png")}
               alt="Nina and Nemanja"
             />
           </div>
