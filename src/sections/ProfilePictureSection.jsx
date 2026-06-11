@@ -11,17 +11,17 @@ function ProfilePictureSection() {
               src={assetPath("profilepic.png")}
               alt="Nina and Nemanja"
             />
+            <img
+              className="profile-name-overlay"
+              src={assetPath("ringwithname.png")}
+              alt=""
+              aria-hidden="true"
+            />
+            <div className="profile-overlay-copy">
+              <p>Nina i Nemanja</p>
+              <span>26.09.2026.</span>
+            </div>
           </div>
-        </div>
-
-        <div className="profile-copy">
-          <span className="ring-art" aria-hidden="true" />
-
-          <h1 className="couple-names">
-            <span>Nina</span>
-            <span className="couple-ampersand">i</span>
-            <span>Nemanja</span>
-          </h1>
         </div>
       </div>
     </section>

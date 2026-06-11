@@ -107,7 +107,7 @@ select {
 .profile-photo-inner {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 0.9;
+  aspect-ratio: 0.82;
   background: #d9d2ce;
 }
 
@@ -120,47 +120,44 @@ select {
   transform: translateX(-9px);
 }
 
-.profile-copy {
-  position: relative;
+.profile-name-overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  max-width: none;
+  pointer-events: none;
+}
+
+.profile-overlay-copy {
+  position: absolute;
+  bottom: clamp(16px, 4.4vw, 28px);
+  left: clamp(18px, 5vw, 34px);
   z-index: 3;
-  display: grid;
-  justify-items: center;
-  margin-top: clamp(-96px, -18vw, -70px);
-  padding: 0 12px clamp(28px, 6vw, 42px);
-}
-
-.ring-art {
-  width: 70px;
-  height: 70px;
-  margin-bottom: clamp(8px, 2vw, 12px);
-  background-image: url("/ring.png");
-  background-repeat: no-repeat;
-  background-position: -259px -10px;
-  background-size: 586px 827px;
-}
-
-.couple-names {
-  display: grid;
-  justify-items: center;
-  margin: 0;
   color: var(--invitation-border);
-  font-family: var(--script);
-  font-size: clamp(56px, 15.5vw, 90px);
-  font-weight: 400;
-  line-height: 0.78;
-  letter-spacing: 0;
   text-align: center;
+  pointer-events: none;
 }
 
-.couple-names span {
+.profile-overlay-copy p {
+  margin: 0;
+  font-family: var(--script);
+  font-size: clamp(34px, 9vw, 56px);
+  font-weight: 400;
+  line-height: 0.86;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.profile-overlay-copy span {
   display: block;
-}
-
-.couple-ampersand {
-  margin-block: 0.12em 0.08em;
-  font-family: "Bickham Script Pro", "Edwardian Script ITC", cursive;
-  font-size: 0.68em;
-  line-height: 0.74;
+  margin-top: clamp(3px, 1vw, 7px);
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(14px, 3.4vw, 18px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .details-section {
