@@ -63,7 +63,7 @@ function RSVPSection() {
 
         <span className="rsvp-ornament rsvp-ornament-top" aria-hidden="true" />
 
-        <RSVPButton href="#">
+        <RSVPButton href="https://docs.google.com/forms/d/e/1FAIpQLSdmWj9fsw7zgAPd_51eBlPMMvcSGrxClSnLJPzPWzSSJNHqAQ/viewform?usp=dialog">
           <CheckIcon />
           Potvrdi dolazak
         </RSVPButton>
