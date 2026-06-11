@@ -90,60 +90,17 @@ select {
 .profile-photo-inner {
   position: relative;
   overflow: hidden;
+  aspect-ratio: 0.9;
   background: #d9d2ce;
 }
 
-.profile-photo-inner::after {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 3;
-  height: 100%;
-  background:
-    linear-gradient(
-      to right,
-      var(--invitation-bg),
-      rgba(232, 226, 224, 0) 10px
-    ),
-    linear-gradient(to left, var(--invitation-bg), rgba(232, 226, 224, 0) 10px),
-    linear-gradient(
-      to bottom,
-      rgba(232, 226, 224, 0) calc(100% - 10px),
-      var(--invitation-bg)
-    );
-  content: "";
-  pointer-events: none;
-}
-
 .profile-photo {
-  width: 100%;
-  aspect-ratio: 0.9;
+  width: calc(100% + 18px);
+  height: calc(100% + 8px);
+  max-width: none;
   object-fit: cover;
   object-position: 50% 50%;
-}
-
-.profile-photo-fade {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  height: 36%;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.profile-photo-fade::before {
-  position: absolute;
-  top: -57.09%;
-  left: -8.97%;
-  width: 118.32%;
-  height: 223.24%;
-  background-image: url("/fade.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  content: "";
+  transform: translateX(-9px);
 }
 
 .profile-copy {

@@ -9,7 +9,6 @@ function ProfilePictureSection() {
               src="/profilepic.png"
               alt="Nina and Milan"
             />
-            <span className="profile-photo-fade" aria-hidden="true" />
           </div>
         </div>
 
