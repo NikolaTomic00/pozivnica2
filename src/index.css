@@ -273,7 +273,7 @@ select {
   justify-items: center;
   width: min(100%, 430px);
   color: var(--invitation-border);
-  font-family: "Geist", Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
 }
 
