@@ -1,0 +1,38 @@
+function InvitationDetailsSection() {
+  return (
+    <section className="details-section" aria-label="Invitation details">
+      <div className="details-shell">
+        <div className="details-card">
+          <span className="details-ring" aria-hidden="true" />
+
+          <p className="details-intro">
+            Sačuvajte dan za nas i budite deo naših najlepših uspomena.
+          </p>
+
+          <p className="details-date">2. JUN 2026.</p>
+
+          <p className="details-signature">Nina i Nemanja</p>
+
+          <div className="details-times">
+            <p>13.00 h - crkveno venčanje</p>
+            <p>16.30 h - građansko venčanje</p>
+          </div>
+
+          <p className="details-location">Svečana sala „Kristal”, Pećinci</p>
+
+          <p className="details-closing">Radosno vas očekujemo,</p>
+
+          <p className="details-families">Porodice Jović i Marić</p>
+
+          <span className="details-divider" aria-hidden="true" />
+
+          <p className="details-rsvp">
+            Molimo vas da svoje prisustvo potvrdite do 15. aprila.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default InvitationDetailsSection;

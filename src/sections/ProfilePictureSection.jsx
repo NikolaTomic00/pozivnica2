@@ -7,7 +7,7 @@ function ProfilePictureSection() {
             <img
               className="profile-photo"
               src="/profilepic.png"
-              alt="Nina and Milan"
+              alt="Nina and Nemanja"
             />
           </div>
         </div>
