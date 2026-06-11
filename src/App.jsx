@@ -1,4 +1,5 @@
 import CountdownSection from "./sections/CountdownSection";
+import GallerySection from "./sections/GallerySection";
 import InvitationDetailsSection from "./sections/InvitationDetailsSection";
 import ProfilePictureSection from "./sections/ProfilePictureSection";
 import TimelineSection from "./sections/TimelineSection";
@@ -10,6 +11,7 @@ export default function App() {
       <InvitationDetailsSection />
       <TimelineSection />
       <CountdownSection />
+      <GallerySection />
     </main>
   );
 }
