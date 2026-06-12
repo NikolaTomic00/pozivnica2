@@ -441,7 +441,7 @@ select {
 }
 
 .countdown-value > span:last-child {
-  color: var(--invitation-gold);
+  color: var(--invitation-border);
   font-family: "Geist", Arial, sans-serif;
   font-size: clamp(24px, 7vw, 38px);
   font-weight: 700;
