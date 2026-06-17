@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Geist:wght@400;500;600;700&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Cormorant+Infant:wght@400;500;600;700&family=Geist:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
 
 @font-face {
   font-family: "Edwardian Script ITC";
@@ -22,6 +22,7 @@
   --invitation-text: #5f5552;
   --invitation-gold: #b68d48;
   --serif: "Cormorant Garamond", Georgia, serif;
+  --infant: "Cormorant Infant", Georgia, serif;
   --script:
     "Edwardian Script ITC", "Bickham Script Pro", "Great Vibes", cursive;
   color: var(--invitation-text);
@@ -87,14 +88,13 @@ select {
 .profile-section {
   display: grid;
   place-items: start center;
-  padding: clamp(22px, 5svh, 48px) clamp(14px, 4vw, 28px)
-    clamp(6px, 1.5svh, 14px);
+  padding: 22px 14px 6px;
 }
 
 .profile-frame {
   width: min(100%, 430px);
   border: 2px solid var(--invitation-border);
-  padding: clamp(9px, 2.6vw, 13px);
+  padding: 9px;
   background: var(--invitation-bg);
 }
 
@@ -122,7 +122,7 @@ select {
 
 .profile-overlay-copy {
   position: absolute;
-  bottom: clamp(14px, 4vw, 24px);
+  bottom: 14px;
   left: 50%;
   z-index: 3;
   display: flex;
@@ -135,18 +135,18 @@ select {
 }
 
 .profile-ring-icon {
-  width: clamp(66px, 16vw, 86px);
-  height: clamp(78px, 19vw, 98px);
-  margin-bottom: clamp(2px, 0.8vw, 5px);
+  width: 66px;
+  height: 78px;
+  margin-bottom: 2px;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: clamp(500px, 123vw, 620px) auto;
+  background-size: 500px auto;
 }
 
 .profile-overlay-copy p {
   margin: 0;
   font-family: var(--script);
-  font-size: clamp(44px, 11vw, 70px);
+  font-size: 44px;
   font-weight: 400;
   line-height: 0.86;
   letter-spacing: 0;
@@ -156,13 +156,12 @@ select {
 .details-section {
   display: grid;
   place-items: start center;
-  padding: clamp(8px, 2svh, 18px) clamp(8px, 2.5vw, 18px)
-    clamp(12px, 3svh, 24px);
+  padding: 8px 8px 12px;
 }
 
 .details-shell {
   width: min(100%, 430px);
-  padding: clamp(7px, 2vw, 10px);
+  padding: 7px;
   background: #fbfaf9;
 }
 
@@ -170,17 +169,17 @@ select {
   display: grid;
   justify-items: center;
   border: 2px solid var(--invitation-border);
-  padding: clamp(22px, 5vw, 30px) clamp(20px, 5.6vw, 30px)
-    clamp(34px, 8vw, 48px);
+  padding: 22px 20px 34px;
   color: #6c5f59;
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--infant);
+  font-size: 18px;
   text-align: center;
 }
 
 .details-ring {
   width: 68px;
   height: 68px;
-  margin-bottom: clamp(20px, 5vw, 28px);
+  margin-bottom: 20px;
   background-image: url("/ring.png");
   background-repeat: no-repeat;
   background-position: -251px -10px;
@@ -193,30 +192,30 @@ select {
 
 .details-intro {
   max-width: 310px;
-  font-size: clamp(19px, 5.1vw, 24px);
+  font-size: 19px;
   font-weight: 500;
   line-height: 1.28;
 }
 
 .details-date {
-  margin-top: clamp(20px, 5vw, 28px) !important;
-  font-size: clamp(19px, 5vw, 23px);
+  margin-top: 20px !important;
+  font-size: 19px;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
 
 .details-signature {
-  margin-top: clamp(10px, 3vw, 16px) !important;
+  margin-top: 10px !important;
   color: var(--invitation-border);
   font-family: var(--script);
-  font-size: clamp(45px, 12vw, 68px);
+  font-size: 45px;
   font-weight: 400;
   line-height: 0.95;
 }
 
 .details-times {
-  margin-top: clamp(17px, 4.5vw, 24px);
-  font-size: clamp(18px, 4.9vw, 23px);
+  margin-top: 17px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.22;
 }
@@ -225,24 +224,24 @@ select {
 .details-closing,
 .details-rsvp {
   max-width: 310px;
-  font-size: clamp(18px, 4.9vw, 23px);
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.28;
 }
 
 .details-location {
-  margin-top: clamp(22px, 5.5vw, 30px) !important;
+  margin-top: 22px !important;
 }
 
 .details-closing {
-  margin-top: clamp(20px, 5vw, 28px) !important;
+  margin-top: 20px !important;
 }
 
 .details-families {
-  margin-top: clamp(18px, 4.6vw, 24px) !important;
+  margin-top: 18px !important;
   color: var(--invitation-border);
   font-family: var(--script);
-  font-size: clamp(34px, 9vw, 48px);
+  font-size: 34px;
   font-style: normal;
   font-weight: 400;
   line-height: 0.9;
@@ -251,19 +250,19 @@ select {
 .details-divider {
   width: min(76%, 250px);
   height: 1px;
-  margin-top: clamp(8px, 2.4vw, 12px);
+  margin-top: 8px;
   background: var(--invitation-border);
   opacity: 0.72;
 }
 
 .details-rsvp {
-  margin-top: clamp(24px, 6vw, 32px) !important;
+  margin-top: 24px !important;
 }
 
 .timeline-section {
   display: grid;
   place-items: start center;
-  padding: clamp(4px, 1svh, 10px) clamp(16px, 4vw, 28px) clamp(42px, 8svh, 74px);
+  padding: 4px 16px 42px;
 }
 
 .timeline-inner {
@@ -271,7 +270,8 @@ select {
   justify-items: center;
   width: min(100%, 430px);
   color: var(--invitation-border);
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--infant);
+  font-size: 18px;
   text-align: center;
 }
 
@@ -281,12 +281,12 @@ select {
 }
 
 .timeline-event + .timeline-event {
-  margin-top: clamp(48px, 10vw, 70px);
+  margin-top: 48px;
 }
 
 .timeline-icon {
   display: block;
-  margin-bottom: clamp(13px, 3vw, 18px);
+  margin-bottom: 13px;
   background-repeat: no-repeat;
 }
 
@@ -316,21 +316,23 @@ select {
 
 .timeline-event h2 {
   margin: 0;
+  font-family: "Playfair Display", sans-serif;
   font-size: 24px;
-  font-weight: 800;
-  letter-spacing: 0;
-  line-height: 1.08;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.027em;
+  line-height: 1.3;
 }
 
 .timeline-address {
-  margin: clamp(10px, 2.4vw, 14px) 0 0;
+  margin: 10px 0 0;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.28;
 }
 
 .timeline-time {
-  margin: clamp(10px, 2.5vw, 14px) 0 0;
+  margin: 10px 0 0;
   font-size: 24px;
   font-weight: 800;
   line-height: 1;
@@ -340,40 +342,36 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  min-height: 31px;
-  margin-top: clamp(18px, 4.8vw, 26px);
-  border: 1.5px solid var(--invitation-border);
-  border-radius: 999px;
-  padding: 7px 14px;
-  background: var(--invitation-border);
-  color: var(--invitation-bg);
-  font-size: 10px;
+  min-height: 0;
+  margin-top: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--invitation-border);
+  font-family: var(--infant);
+  font-size: 18px;
+  font-style: italic;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-transform: none;
   transition:
-    background-color 180ms ease,
-    color 180ms ease;
-}
-
-.timeline-map-button svg {
-  width: 12px;
-  height: 12px;
+    color 180ms ease,
+    opacity 180ms ease;
 }
 
 .timeline-map-button:hover,
 .timeline-map-button:focus-visible {
-  background: var(--invitation-gold);
-  color: #fff;
+  color: var(--invitation-border);
+  opacity: 0.72;
 }
 
 .countdown-section {
   display: grid;
   place-items: start center;
-  padding: clamp(10px, 3svh, 26px) clamp(16px, 4vw, 28px)
-    clamp(42px, 8svh, 76px);
+  padding: 10px 16px 42px;
 }
 
 .countdown-inner {
@@ -401,8 +399,8 @@ select {
   margin: 0;
   white-space: nowrap;
   color: var(--invitation-border);
-  font-family: "Times New Roman", Times, serif;
-  font-size: clamp(22px, 6vw, 30px);
+  font-family: var(--infant);
+  font-size: 26px;
   font-style: italic;
   line-height: 1;
 }
@@ -411,8 +409,8 @@ select {
   margin: 28px 0 0;
   white-space: nowrap;
   color: var(--invitation-border);
-  font-family: "Edwardian Script ITC", cursive;
-  font-size: clamp(45px, 17vw, 60px);
+  font-family: var(--script);
+  font-size: 45px;
   line-height: 1;
 }
 
@@ -448,8 +446,8 @@ select {
 
 .countdown-value > span:last-child {
   color: var(--invitation-border);
-  font-family: "Geist", Arial, sans-serif;
-  font-size: clamp(24px, 7vw, 38px);
+  font-family: "Playfair Display", sans-serif;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1;
 }
@@ -471,7 +469,7 @@ select {
 
 .countdown-label {
   color: var(--invitation-border);
-  font-family: "Geist", Arial, sans-serif;
+  font-family: var(--infant);
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -481,7 +479,7 @@ select {
 .gallery-section {
   display: grid;
   place-items: start center;
-  padding: 0 clamp(16px, 4vw, 28px) 32px;
+  padding: 0 16px 32px;
 }
 
 .gallery-inner {
@@ -491,16 +489,16 @@ select {
 }
 
 .gallery-title {
-  margin: 0 0 clamp(18px, 4vw, 26px);
+  margin: 0 0 18px;
   font-family: var(--script);
-  font-size: clamp(48px, 14vw, 72px);
+  font-size: 48px;
   line-height: 0.9;
 }
 
 .embla {
   width: 100%;
   margin: auto;
-  --slide-height: clamp(210px, 56vw, 310px);
+  --slide-height: 210px;
   --slide-spacing: 12px;
   --slide-size: 72%;
 }
@@ -631,8 +629,7 @@ select {
 .rsvp-section {
   display: grid;
   place-items: start center;
-  padding: clamp(12px, 3svh, 30px) clamp(16px, 4vw, 28px)
-    clamp(48px, 9svh, 84px);
+  padding: 12px 16px 48px;
 }
 
 .rsvp-inner {
@@ -646,8 +643,8 @@ select {
 .rsvp-text {
   max-width: 330px;
   margin: 0;
-  font-family: "Times New Roman", Times, serif;
-  font-size: clamp(19px, 5vw, 23px);
+  font-family: var(--infant);
+  font-size: 18px;
   line-height: 1.32;
 }
 
@@ -659,15 +656,15 @@ select {
 }
 
 .rsvp-ornament-top {
-  margin-top: clamp(28px, 7vw, 42px);
-  margin-bottom: clamp(16px, 4vw, 24px);
+  margin-top: 28px;
+  margin-bottom: 16px;
   background-image: url("/rsvptop.png");
   background-position: -50px -29px;
   background-size: 386px 544px;
 }
 
 .rsvp-ornament-bottom {
-  margin-top: clamp(16px, 4vw, 24px);
+  margin-top: 16px;
   background-image: url("/rsvpbottom.png");
   background-position: -50px -38px;
   background-size: 386px 544px;
@@ -732,8 +729,7 @@ select {
 .location-section {
   display: grid;
   place-items: start center;
-  padding: clamp(10px, 3svh, 28px) clamp(16px, 4vw, 28px)
-    clamp(34px, 7svh, 56px);
+  padding: 10px 16px 34px;
 }
 
 .location-inner {
@@ -774,7 +770,7 @@ select {
 
 @media (min-width: 720px) {
   .profile-section {
-    padding-top: clamp(34px, 6svh, 64px);
+    padding-top: 34px;
   }
 
   .profile-frame {

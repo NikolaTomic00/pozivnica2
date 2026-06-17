@@ -30,9 +30,9 @@ function RSVPButton({ children, href }) {
             y2="58"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#b68d48" />
+            <stop stopColor="#7b6e6a" />
             <stop offset="0.5" stopColor="#7b6e6a" />
-            <stop offset="1" stopColor="#e0ad4f" />
+            <stop offset="1" stopColor="#5f5552" />
           </linearGradient>
         </defs>
         <path

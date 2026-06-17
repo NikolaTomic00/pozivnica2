@@ -1,5 +1,3 @@
-import { MapPin } from "lucide-react";
-
 const churchMapUrl =
   "https://www.google.com/maps/search/?api=1&query=Crkva%20Prenosa%20mo%C5%A1tiju%20Svetog%20oca%20Nikolaja%20Pe%C4%87inci";
 const kristalMapUrl =
@@ -19,7 +17,6 @@ function TimelineEvent({ iconClass, title, address, time, mapUrl }) {
       <p className="timeline-time">{time}</p>
 
       <a className="timeline-map-button" href={mapUrl} target="_blank" rel="noreferrer">
-        <MapPin aria-hidden="true" size={17} strokeWidth={2.2} />
         Pogledaj na mapi
       </a>
     </article>
