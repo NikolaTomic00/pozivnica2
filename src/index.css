@@ -652,7 +652,7 @@ select {
   background: #f3eeec;
   padding: 14px 28px;
   color: var(--invitation-border);
-  font-family: "Geist", Arial, sans-serif;
+  font-family: var(--serif);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
