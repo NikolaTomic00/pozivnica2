@@ -16,10 +16,9 @@ function getTimeLeft() {
 function CountdownBox({ value, label }) {
   return (
     <div className="countdown-box">
-      <div className="countdown-value">
-        <span className="countdown-scan" aria-hidden="true" />
-        <span>{String(value).padStart(2, "0")}</span>
-      </div>
+      <span className="countdown-value">
+        {String(value).padStart(2, "0")}
+      </span>
       <span className="countdown-label">{label}</span>
     </div>
   );
@@ -37,10 +36,10 @@ function CountdownSection() {
   }, []);
 
   const countdownItems = [
-    ["days", "Dana"],
-    ["hours", "Sati"],
-    ["minutes", "Min"],
-    ["seconds", "Sek"],
+    ["days", "dana"],
+    ["hours", "sati"],
+    ["minutes", "minuta"],
+    ["seconds", "sekundi"],
   ];
 
   return (
