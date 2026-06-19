@@ -36,10 +36,10 @@ function CountdownSection() {
   }, []);
 
   const countdownItems = [
-    ["days", "dana"],
+    ["days", "dani"],
     ["hours", "sati"],
-    ["minutes", "minuta"],
-    ["seconds", "sekundi"],
+    ["minutes", "minuti"],
+    ["seconds", "sekunde"],
   ];
 
   return (

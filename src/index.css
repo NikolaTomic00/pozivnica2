@@ -433,18 +433,19 @@ select {
 
 .countdown-value {
   color: var(--invitation-border);
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Geist", sans-serif;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1;
 }
 
 .countdown-label {
   color: var(--invitation-border);
-  font-family: var(--script);
-  font-size: 34px;
+  font-family: "Geist", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1;
+  text-transform: uppercase;
 }
 
 .gallery-section {
@@ -770,7 +771,7 @@ select {
   }
 
   .countdown-label {
-    font-size: 34px;
+    font-size: 16px;
   }
 
   .gallery-inner {
