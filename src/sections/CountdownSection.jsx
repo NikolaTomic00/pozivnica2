@@ -45,12 +45,6 @@ function CountdownSection() {
   return (
     <section className="countdown-section" aria-label="Countdown">
       <div className="countdown-inner">
-        <div className="countdown-date-row">
-          <span />
-          <p>26/09/2026</p>
-          <span />
-        </div>
-
         <p className="countdown-title">Brojimo zajedno</p>
 
         <div className="countdown-grid">

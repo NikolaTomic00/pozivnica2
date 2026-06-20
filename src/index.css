@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Cormorant+Infant:wght@400;500;600;700&family=Geist:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Geist:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;1,400&family=Poiret+One&family=Quicksand:wght@400;500;600;700&display=swap");
 
 @font-face {
   font-family: "Edwardian Script ITC";
@@ -22,7 +22,7 @@
   --invitation-text: #5f5552;
   --invitation-gold: #b68d48;
   --serif: "Cormorant Garamond", Georgia, serif;
-  --infant: "Cormorant Infant", Georgia, serif;
+  --quicksand: "Quicksand", Arial, sans-serif;
   --script:
     "Edwardian Script ITC", "Bickham Script Pro", "Great Vibes", cursive;
   color: var(--invitation-text);
@@ -157,7 +157,7 @@ select {
 
 .details-shell {
   width: 100%;
-  padding: 7px;
+  padding: 10px;
   background: #fbfaf9;
 }
 
@@ -167,8 +167,8 @@ select {
   border: 2px solid var(--invitation-border);
   padding: 16px 28px;
   color: #6c5f59;
-  font-family: var(--infant);
-  font-size: 18px;
+  font-family: var(--quicksand);
+  font-size: 16px;
   text-align: center;
 }
 
@@ -188,7 +188,7 @@ select {
 
 .details-intro {
   max-width: 310px;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.28;
 }
@@ -211,7 +211,7 @@ select {
 
 .details-times {
   margin-top: 17px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.22;
 }
@@ -220,7 +220,7 @@ select {
 .details-closing,
 .details-rsvp {
   max-width: 310px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.28;
 }
@@ -266,8 +266,8 @@ select {
   justify-items: center;
   width: min(100%, 430px);
   color: var(--invitation-border);
-  font-family: var(--infant);
-  font-size: 18px;
+  font-family: var(--quicksand);
+  font-size: 16px;
   text-align: center;
 }
 
@@ -322,7 +322,7 @@ select {
 
 .timeline-address {
   margin: 10px 0 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.28;
 }
@@ -345,8 +345,8 @@ select {
   padding: 0;
   background: transparent;
   color: var(--invitation-border);
-  font-family: var(--infant);
-  font-size: 18px;
+  font-family: var(--quicksand);
+  font-size: 16px;
   font-style: italic;
   font-weight: 700;
   letter-spacing: 0;
@@ -365,57 +365,37 @@ select {
 }
 
 .countdown-section {
-  display: grid;
-  place-items: start center;
-  padding: 10px 16px 42px;
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
 }
 
 .countdown-inner {
-  width: min(100%, 430px);
-  color: var(--invitation-border);
+  width: 100%;
+  padding: 48px 16px;
+  background: var(--invitation-border);
+  color: #f7f1ee;
   text-align: center;
 }
 
-.countdown-date-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  max-width: 352px;
-  margin: 0 auto;
-}
-
-.countdown-date-row span {
-  height: 1px;
-  flex: 1;
-  background: var(--invitation-border);
-}
-
-.countdown-date-row p {
+.countdown-title {
   margin: 0;
   white-space: nowrap;
-  color: var(--invitation-border);
-  font-family: var(--infant);
-  font-size: 26px;
-  font-style: italic;
-  line-height: 1;
-}
-
-.countdown-title {
-  margin: 28px 0 0;
-  white-space: nowrap;
-  color: var(--invitation-border);
-  font-family: var(--script);
-  font-size: 45px;
-  line-height: 1;
+  font-family: var(--quicksand);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .countdown-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
-  max-width: 416px;
-  margin: 32px auto 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 672px;
+  margin: 40px auto 0;
 }
 
 .countdown-box {
@@ -424,24 +404,25 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
 }
 
 .countdown-value {
-  color: var(--invitation-border);
-  font-family: "Geist", sans-serif;
-  font-size: 38px;
-  font-weight: 500;
+  color: inherit;
+  font-family: "Poiret One", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
   line-height: 1;
 }
 
 .countdown-label {
-  color: var(--invitation-border);
-  font-family: "Geist", sans-serif;
-  font-size: 12px;
+  margin-top: 8px;
+  color: inherit;
+  font-family: var(--quicksand);
+  font-size: 10px;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.2em;
   line-height: 1;
+  opacity: 0.75;
   text-transform: uppercase;
 }
 
@@ -596,25 +577,36 @@ select {
 }
 
 .rsvp-section {
-  display: grid;
-  place-items: start center;
-  padding: 12px 16px 64px;
-}
-
-.rsvp-inner {
-  display: grid;
-  justify-items: center;
-  width: min(100%, 430px);
-  color: var(--invitation-border);
+  padding: 32px 20px 64px;
   text-align: center;
 }
 
-.rsvp-text {
-  max-width: 330px;
+.rsvp-inner {
+  display: flex;
+  width: min(100%, 448px);
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  color: var(--invitation-border);
+}
+
+.rsvp-title {
   margin: 0;
-  font-family: var(--infant);
-  font-size: 18px;
-  line-height: 1.32;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.648px;
+  line-height: 1.2;
+}
+
+.rsvp-text {
+  max-width: 384px;
+  margin: 24px 0 0;
+  font-family: var(--quicksand);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .rsvp-ornament {
@@ -641,44 +633,41 @@ select {
 
 .rsvp-button {
   display: inline-flex;
-  min-height: 52px;
+  min-width: 220px;
+  margin-top: 0;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(95, 85, 82, 0.45);
+  border: 0;
   border-radius: 999px;
   background: var(--invitation-border);
-  padding: 14px 28px;
+  padding: 16px 32px;
   color: #fffaf7;
-  font-family: var(--serif);
+  font-family: var(--quicksand);
   font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-weight: 500;
+  letter-spacing: 0.18em;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: 0 12px 24px rgba(80, 72, 58, 0.16);
   transition:
-    background-color 180ms ease,
-    box-shadow 180ms ease;
+    transform 200ms ease,
+    box-shadow 200ms ease,
+    filter 200ms ease;
 }
 
 .rsvp-button:hover,
 .rsvp-button:focus-visible {
-  background: var(--invitation-text);
-  box-shadow: 0 14px 28px rgba(80, 72, 58, 0.22);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(123, 110, 106, 0.28);
 }
 
-.rsvp-button-content {
-  position: relative;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+.rsvp-button:active {
+  transform: translateY(0) scale(0.95);
+  filter: brightness(0.95);
 }
 
-.rsvp-check-icon {
-  width: 16px;
-  height: 16px;
+.rsvp-button:focus-visible {
+  outline: 2px solid var(--invitation-border);
+  outline-offset: 4px;
 }
 
 .location-section {
@@ -749,12 +738,16 @@ select {
     width: min(100%, 470px);
   }
 
-  .countdown-inner {
-    width: min(100%, 470px);
+  .countdown-grid {
+    gap: 32px;
   }
 
-  .countdown-grid {
-    gap: 28px;
+  .countdown-inner {
+    padding: 64px 40px;
+  }
+
+  .countdown-value {
+    font-size: 60px;
   }
 
   .countdown-label {
@@ -771,8 +764,9 @@ select {
     --slide-size: 70%;
   }
 
-  .rsvp-inner {
-    width: min(100%, 470px);
+  .rsvp-section {
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 
   .location-inner,
