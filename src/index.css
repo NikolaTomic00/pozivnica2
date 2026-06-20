@@ -82,7 +82,7 @@ select {
 .profile-section {
   display: grid;
   place-items: start center;
-  padding: 22px 14px 6px;
+  padding: 22px 18px 6px;
 }
 
 .profile-frame {
@@ -165,7 +165,7 @@ select {
   display: grid;
   justify-items: center;
   border: 2px solid var(--invitation-border);
-  padding: 36px 28px 42px;
+  padding: 16px 28px;
   color: #6c5f59;
   font-family: var(--infant);
   font-size: 18px;
