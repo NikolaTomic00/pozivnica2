@@ -94,7 +94,7 @@ select {
 .profile-frame {
   width: min(100%, 430px);
   border: 2px solid var(--invitation-border);
-  padding: 9px;
+  padding: 13px;
   background: var(--invitation-bg);
 }
 
@@ -156,11 +156,13 @@ select {
 .details-section {
   display: grid;
   place-items: start center;
-  padding: 8px 8px 12px;
+  width: min(100%, 430px);
+  margin: 0 auto;
+  padding: 32px 24px 12px;
 }
 
 .details-shell {
-  width: min(100%, 430px);
+  width: 100%;
   padding: 7px;
   background: #fbfaf9;
 }
@@ -169,7 +171,7 @@ select {
   display: grid;
   justify-items: center;
   border: 2px solid var(--invitation-border);
-  padding: 22px 20px 34px;
+  padding: 36px 28px 42px;
   color: #6c5f59;
   font-family: var(--infant);
   font-size: 18px;
@@ -177,13 +179,13 @@ select {
 }
 
 .details-ring {
-  width: 68px;
-  height: 68px;
+  width: 48px;
+  height: 48px;
   margin-bottom: 20px;
   background-image: url("/ring.png");
   background-repeat: no-repeat;
-  background-position: -251px -10px;
-  background-size: 570px 804px;
+  background-position: -177px -7px;
+  background-size: 402px auto;
 }
 
 .details-card p {
@@ -747,15 +749,19 @@ select {
 
   .profile-frame {
     width: min(100%, 470px);
-    padding: 14px;
+    padding: 18px;
   }
 
   .details-shell {
+    width: 100%;
+  }
+
+  .details-section {
     width: min(100%, 470px);
   }
 
   .details-card {
-    padding-inline: 36px;
+    padding-inline: 32px;
   }
 
   .timeline-inner {
