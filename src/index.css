@@ -372,7 +372,7 @@ select {
 
 .countdown-inner {
   width: 100%;
-  padding: 48px 16px;
+  padding: 32px 16px;
   background: var(--invitation-border);
   color: #f7f1ee;
   text-align: center;
@@ -593,7 +593,7 @@ select {
 .rsvp-title {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: 32px;
+  font-size: 24px;
   font-style: italic;
   font-weight: 400;
   letter-spacing: -0.648px;
@@ -643,7 +643,7 @@ select {
   padding: 16px 32px;
   color: #fffaf7;
   font-family: var(--quicksand);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.18em;
   text-decoration: none;
