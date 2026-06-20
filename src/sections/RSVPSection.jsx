@@ -15,39 +15,6 @@ function CheckIcon() {
 function RSVPButton({ children, href }) {
   return (
     <a className="rsvp-button" href={href}>
-      <svg
-        className="rsvp-button-border"
-        viewBox="0 0 220 58"
-        preserveAspectRatio="none"
-        aria-hidden="true"
-      >
-        <defs>
-          <linearGradient
-            id="rsvp-button-border-gradient"
-            x1="0"
-            x2="220"
-            y1="0"
-            y2="58"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stopColor="#7b6e6a" />
-            <stop offset="0.5" stopColor="#7b6e6a" />
-            <stop offset="1" stopColor="#5f5552" />
-          </linearGradient>
-        </defs>
-        <path
-          className="rsvp-button-border-path"
-          d="M 29 1 A 28 28 0 0 0 1 29 A 28 28 0 0 0 29 57 L 191 57 A 28 28 0 0 0 219 29 A 28 28 0 0 0 191 1 Z"
-          fill="none"
-          stroke="url(#rsvp-button-border-gradient)"
-          strokeDasharray="370 560"
-          strokeDashoffset="370"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth="2"
-        />
-      </svg>
-
       <span className="rsvp-button-content">{children}</span>
     </a>
   );
